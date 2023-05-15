@@ -21,13 +21,13 @@ const styles = (theme) => ({
     paddingRight: theme.spacing(4),
     border: `3px solid ${theme.palette.primary.dark}`,
     borderRadius: theme.shape.borderRadius * 2,
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.success.dark,
     [theme.breakpoints.down("sm")]: {
       marginTop: theme.spacing(2),
     },
   },
   title: {
-    color: theme.palette.primary.main,
+    color: theme.palette.success.dark,
   },
 });
 

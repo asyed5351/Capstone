@@ -58,7 +58,7 @@ const styles = (theme) => ({
   },
   wrapper: {
     position: "relative",
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.success.dark,
     paddingBottom: theme.spacing(2),
   },
   image: {
@@ -115,8 +115,7 @@ function HeadSection(props) {
                     >
                       <Box mb={4}>
                         <Typography variant={isWidthUpLg ? "h3" : "h4"}>
-                          Free Template for building a SaaS app using
-                          Material-UI
+                        My Insights and Tips to Revamp the Computer Science Department at Lehman College
                         </Typography>
                       </Box>
                       <div>
@@ -125,8 +124,7 @@ function HeadSection(props) {
                             variant={isWidthUpLg ? "h6" : "body1"}
                             color="textSecondary"
                           >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt
+                            By Abdur-Rahman Syed 
                           </Typography>
                         </Box>
                         <Button
@@ -135,9 +133,9 @@ function HeadSection(props) {
                           fullWidth
                           className={classes.extraLargeButton}
                           classes={{ label: classes.extraLargeButtonLabel }}
-                          href="https://github.com/dunky11/react-saas-template"
+                          href="https://docs.google.com/document/d/1LADwi_PBHO-_IgNbK3LhdV581ctTl-Zaz-LZSWGk6J4/edit"
                         >
-                          Download from GitHub
+                          Capstone Essay
                         </Button>
                       </div>
                     </Box>
@@ -158,8 +156,8 @@ function HeadSection(props) {
         </div>
       </div>
       <WaveBorder
-        upperColor={theme.palette.secondary.main}
-        lowerColor="#FFFFFF"
+        upperColor={theme.palette.success.dark}
+        lowerColor="#000000"
         className={classes.waveBorder}
         animationNegativeDelay={2}
       />

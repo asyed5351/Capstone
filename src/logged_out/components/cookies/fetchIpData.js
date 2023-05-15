@@ -1,10 +1,7 @@
 const fetchIpData = new Promise((resolve, reject) => {
   const ajax = new XMLHttpRequest();
   if (window.location.href.includes("localhost")) {
-    /**
-     *  Resolve with dummydata, GET call will be rejected,
-     *  since ipinfos server is configured that way
-     */
+ 
     resolve({ data: { country: "DE" } });
     return;
   }

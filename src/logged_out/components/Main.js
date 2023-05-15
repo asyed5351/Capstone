@@ -1,6 +1,6 @@
 import React, { memo, useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
-import AOS from "aos/dist/aos";
+import AOS from "aos";
 import withStyles from '@mui/styles/withStyles';
 import NavBar from "./navigation/NavBar";
 import Footer from "./footer/Footer";
@@ -16,7 +16,7 @@ AOS.init({ once: true });
 
 const styles = (theme) => ({
   wrapper: {
-    backgroundColor: theme.palette.common.white,
+    backgroundColor: theme.palette.common.black,
     overflowX: "hidden",
   },
 });
@@ -32,13 +32,13 @@ function Main(props) {
   const selectHome = useCallback(() => {
     smoothScrollTop();
     document.title =
-      "WaVer - Free template for building a SaaS or admin application";
+      "Project Revamp";
     setSelectedTab("Home");
   }, [setSelectedTab]);
 
   const selectBlog = useCallback(() => {
     smoothScrollTop();
-    document.title = "WaVer - Blog";
+    document.title = "Project Revamp - Blog";
     setSelectedTab("Blog");
   }, [setSelectedTab]);
 

@@ -235,7 +235,7 @@ function NavBar(props) {
                 display="inline"
                 color="primary"
               >
-                Wa
+                Project
               </Typography>
               <Typography
                 variant="h4"
@@ -243,7 +243,7 @@ function NavBar(props) {
                 display="inline"
                 color="secondary"
               >
-                Ver
+                Revamp
               </Typography>
             </Hidden>
           </Box>

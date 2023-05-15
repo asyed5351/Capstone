@@ -13,7 +13,7 @@ import NavigationDrawer from "../../../shared/components/NavigationDrawer";
 const styles = theme => ({
   appBar: {
     boxShadow: theme.shadows[6],
-    backgroundColor: theme.palette.common.white
+    backgroundColor: theme.palette.common.black
   },
   toolbar: {
     display: "flex",
@@ -53,16 +53,7 @@ function NavBar(props) {
       name: "Blog",
       icon: <BookIcon className="text-white" />
     },
-    {
-      name: "Register",
-      onClick: openRegisterDialog,
-      icon: <HowToRegIcon className="text-white" />
-    },
-    {
-      name: "Login",
-      onClick: openLoginDialog,
-      icon: <LockOpenIcon className="text-white" />
-    }
+
   ];
   return (
     <div className={classes.root}>
@@ -75,7 +66,7 @@ function NavBar(props) {
               display="inline"
               color="primary"
             >
-              Wa
+              Project
             </Typography>
             <Typography
               variant="h4"
@@ -83,7 +74,7 @@ function NavBar(props) {
               display="inline"
               color="secondary"
             >
-              Ver
+              Revamp
             </Typography>
           </div>
           <div>
